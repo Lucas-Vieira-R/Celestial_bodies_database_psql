@@ -25,4 +25,5 @@ Once you have the database set up, you can start exploring the data by querying 
     ---
     
 3. Get a list of all planets that have at least one moon:  
-    `SELECT galaxy.name, COUNT(*) FROM blackhole INNER JOIN star ON blackhole.star_id = star.id INNER JOIN galaxy ON star.galaxy_id = galaxy.id GROUP BY galaxy.name;`
+    `SELECT planet.* FROM planet INNER JOIN moon ON planet.id = moon.planet_id;
+`
