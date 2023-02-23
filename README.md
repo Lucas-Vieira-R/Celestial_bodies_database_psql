@@ -1,7 +1,7 @@
 # Celestial Bodies Database Project
 This is a database project for celestial bodies created using PostgreSQL. The project consists of 5 tables - galaxy, star, planet, moon, and blackhole - and includes information such as age of galaxy, color of star, and number of planets.
 
-![](images/database_schema)
+![](/images/database_schema)
 
 ## Getting Started
 
