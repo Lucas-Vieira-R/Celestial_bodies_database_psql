@@ -15,8 +15,14 @@ To use the database, follow these steps:
 Once you have the database set up, you can start exploring the data by querying the tables using SQL commands. Here are some example queries:
 
 1. Get a list of all galaxys on the db:
-    SELECT * FROM galaxy;
+    `SELECT * FROM galaxy;`
+    
+    ---
+    
 2. Get a list of all stars in the Milky Way galaxy:
-    SELECT * FROM star WHERE galaxy_id = (SELECT galaxy_id FROM galaxy WHERE name = 'Milky Way');
+    `SELECT * FROM star WHERE galaxy_id = (SELECT galaxy_id FROM galaxy WHERE name = 'Milky Way');`
+    
+    ---
+    
 3. Get a list of all planets that have at least one moon:
-    SELECT galaxy.name, COUNT(*) FROM blackhole INNER JOIN star ON blackhole.star_id = star.id INNER JOIN galaxy ON star.galaxy_id = galaxy.id GROUP BY galaxy.name;
+    `SELECT galaxy.name, COUNT(*) FROM blackhole INNER JOIN star ON blackhole.star_id = star.id INNER JOIN galaxy ON star.galaxy_id = galaxy.id GROUP BY galaxy.name;`
