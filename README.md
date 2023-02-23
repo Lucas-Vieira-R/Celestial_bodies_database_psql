@@ -18,14 +18,14 @@ Once you have the database set up, you can start exploring the data by querying 
 
 1. Get a list of all galaxys on the db:  
     `SELECT * FROM galaxy;`
+    
     ![](/images/galaxy_all.png)
-    ---
 
     
 2. Get a list of all stars in the Milky Way galaxy:  
     `SELECT * FROM star WHERE galaxy_id = (SELECT galaxy_id FROM galaxy WHERE name = 'Milky Way');`
+    
     ![](/images/star_from_mily_way.png)   
-    ---
 
     
 3. Get a list of all planets that have at least one moon:  
