@@ -25,5 +25,5 @@ Once you have the database set up, you can start exploring the data by querying 
     ---
     
 3. Get a list of all planets that have at least one moon:  
-    `SELECT planet.* FROM planet INNER JOIN moon ON planet.id = moon.planet_id;
+    `SELECT planet.* FROM planet INNER JOIN moon ON planet.planet_id = moon.planet_id;
 `
